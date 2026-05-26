@@ -11,7 +11,7 @@
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5.5fr;
 
 }
 
@@ -164,7 +164,30 @@ a {
 
 
 .announcement-content, .trending-content {
-    background-color: rgb(235, 0, 0);
+    background-color: rgb(255, 255, 255);
     margin-top: 16px;
     border-radius: 16px;
+    padding: 16px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.trending-content {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.announcement-head {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.announcement-body {
+    font-size: 12px;
+    color: rgb(87, 87, 87);
+}
+
+.tweet {
+    background-color: green;
+    gap: 15px;
 }
