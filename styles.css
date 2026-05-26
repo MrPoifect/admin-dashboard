@@ -23,13 +23,31 @@
 
 .header {
     background-color: azure;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-column: 2 / 3;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-content: center;
+    padding-left: 32px;
+}
+
+.profile-small {
+    background-color: red;
 }
 
 .header-bot {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
+    align-content: center;
+    padding-left: 32px;
+}
+
+#profile-section {
+    background-color: red;
 }
 
 button {
