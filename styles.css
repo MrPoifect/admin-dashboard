@@ -11,6 +11,7 @@
 }
 body {
     background-color: rgb(205, 213, 245);
+    overflow: hidden;
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: minmax(120px, 25%) 5fr;
+    grid-template-rows: minmax(160px, 25%) 5fr;
 
 }
 
@@ -309,11 +310,27 @@ a {
 
 .trending {
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-row: 2 / 4;
+    position: relative;
+    top: 189px;
 }
 
 .trending-content {
 
+}
+
+.tweet {
+    display: flex;
+    padding: 24px;
+}
+
+.tweet > div {
+    align-self: center;
+    padding-left: 12px;
+}
+
+.tweet > h6 {
+    font-size: 90px;
 }
 
 h4 {
@@ -322,4 +339,9 @@ h4 {
 
 .subtext {
     color: rgb(102, 102, 102);
+}
+
+img {
+    width: 50px;
+    border-radius: 50%;
 }
