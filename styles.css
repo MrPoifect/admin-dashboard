@@ -312,16 +312,17 @@ a {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
     position: relative;
-    top: 189px;
+    top: 200px;
 }
 
 .trending-content {
-
+    padding: 24px;
+    display: grid;
+    gap: 24px;
 }
 
 .tweet {
     display: flex;
-    padding: 24px;
 }
 
 .tweet > div {
