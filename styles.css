@@ -38,8 +38,7 @@ ul {
 
 .header-top {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    align-content: center;
+    grid-template-columns: 5fr 2fr;
     padding-left: 32px;
 }
 
@@ -50,7 +49,6 @@ ul {
 .header-bot {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-content: center;
     padding-left: 32px;
 }
 
@@ -61,6 +59,7 @@ ul {
 .buttons {
     margin-left: auto;
     margin-right: 16px;
+    align-content: center;
 }
 
 button {
@@ -104,7 +103,27 @@ button {
     border-radius: 8px;
     box-shadow: 3px 3px 5px rgb(196, 196, 196);
     border-left: solid 5px rgb(255, 174, 0);
+    padding: 32px 16px;
+    display: grid;
+    gap: 8px;
+    grid-template-rows: 3fr 1fr;
+}
 
+.box-text {
+    background-color: red;
+}
+
+.box-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.box-icons {
+    display: flex;
+    background-color: red;
+    align-content: center;
+    justify-content: end;
 }
 
 .sidebar {
@@ -128,7 +147,7 @@ a {
     align-items: center;
 }
 
-.icon, .white {
+.icon.white {
     height: 30px;
     padding: 0px 10px 4px 18px;
     filter: invert();
@@ -190,4 +209,11 @@ a {
 .tweet {
     background-color: green;
     gap: 15px;
+}
+
+.icon.black {
+    height: 30px;
+    padding: 6px;
+    filter: contrast(70%)
+
 }
