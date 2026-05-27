@@ -1,6 +1,13 @@
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+
 * {
     margin: 0;
     padding: 0;
+    font-family: roboto, arial, sans-serif;
 }
 .body {
 
@@ -24,22 +31,35 @@
     gap: 16px;
 }
 
-ul {
-    background-color: green;
 
-}
 
 .header {
     background-color: azure;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-column: 2 / 3;
+    padding-left: 42px;
 }
 
 .header-top {
     display: grid;
     grid-template-columns: 5fr 2fr;
-    padding-left: 32px;
+}
+
+.searchbar {
+    align-content: center;
+    background-color: green;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    background-color: rgb(209, 206, 231);
+    width: 70%;
+    border: 0px;
+    border-radius: 16px;
+    height: 28px;
+    margin-left: 6px;
 }
 
 .profile-small {
@@ -49,7 +69,6 @@ ul {
 .header-bot {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 32px;
 }
 
 #profile-section {
@@ -103,14 +122,13 @@ button {
     border-radius: 8px;
     box-shadow: 3px 3px 5px rgb(196, 196, 196);
     border-left: solid 5px rgb(255, 174, 0);
-    padding: 32px 16px;
+    padding: 32px 16px 16px 16px;
     display: grid;
     gap: 8px;
     grid-template-rows: 3fr 1fr;
 }
 
 .box-text {
-    background-color: red;
 }
 
 .box-title {
@@ -121,9 +139,10 @@ button {
 
 .box-icons {
     display: flex;
-    background-color: red;
+
     align-content: center;
     justify-content: end;
+    gap: 15px;
 }
 
 .sidebar {
@@ -168,8 +187,9 @@ a {
 }
 
 .announcements, .trending {
-    display: inline-grid;
+    display: grid;
     grid-template-rows: 0.1fr 1fr;
+    
 }
 
 .announcement-title, .trending-title {
@@ -206,6 +226,15 @@ a {
     color: rgb(87, 87, 87);
 }
 
+.announcement.underline {
+    border-bottom: solid 2px;
+}
+
+.announcement {
+    background-color: red;
+    padding-top: 50px;
+}
+
 .tweet {
     background-color: green;
     gap: 15px;
@@ -213,7 +242,6 @@ a {
 
 .icon.black {
     height: 30px;
-    padding: 6px;
     filter: contrast(70%)
 
 }
